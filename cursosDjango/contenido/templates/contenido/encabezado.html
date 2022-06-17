@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'contenido/css/estilos.css'%}">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="options__menu">	
+
+            <a href="{%url 'Principal'%}" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Principal"></i>
+                    <h4>Principal</h4>
+                </div>
+            </a>
+            
+            <a href="{%url 'Cursos'%}">
+                <div class="option">
+                    <i class="fas fa-video" title="Cursos"></i>
+                    <h4>Cursos</h4>
+                </div>
+            </a>
+
+            <a href="{%url 'Contacto'%}">
+                <div class="option">
+                    <i class="far fa-id-badge" title="Contacto"></i>
+                    <h4>Contacto</h4>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+    <script src="{%static 'contenido/js/script.js'%}"></script>
+
+    {%block contenido%}
+    
+    {%endblock%}      
+</body>
+</html>
