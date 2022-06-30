@@ -1,0 +1,41 @@
+{%extends "contenido/encabezado.html"%}
+
+{% block titulo %} Cursos {% endblock %}
+
+{%block contenido%}
+<div class="page-content">
+    <!--Tabla de Cursos-->
+    <table class="table able-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Foto</th>
+                <th>Curso</th>
+                <th>Profesor</th>
+                <th>Lecciones</th>
+                <th>Horas</th>
+                <th>Clasificación:</th>
+                <th>Fecha de publicación</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for curso in cursos %}
+                <tr>
+                    <td class="text-center">
+                        <img src="{{curso.imagen.url}}" alt="" class="img-media">
+                    </td>
+                    <td class="text-semibold">{{curso.nombreCurso}}</td>
+                    <td class="muted">{{curso.nombreProfesor}}</td>
+                    <td class="muted">{{curso.totalLecciones}}</td>
+                    <td class="muted">{{curso.totalHoras}}</td>
+                    <td class="muted">{{curso.clasificacionCurso}}</td>
+                    <td class="muted">{{curso.fechaPublicacion}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+<!--/Tabla de Cursos-->
+</div>
+{%endblock%}
+

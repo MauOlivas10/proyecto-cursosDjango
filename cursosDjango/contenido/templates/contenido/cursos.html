@@ -4,19 +4,36 @@
 
 {%block contenido%}
 <div class="page-content">
+    <!--Tabla de Cursos-->
+    <table class="table able-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Foto</th>
+                <th>Curso</th>
+                <th>Profesor</th>
+                <th>Lecciones</th>
+                <th>Horas</th>
+                <th>Clasificación:</th>
+                <th>Fecha de publicación</th>
+            </tr>
+        </thead>
 
-    <div class="page-header">
+        <tbody>
+            <tr>
+                <td class="text-center">
+                    <img src="" alt="" class="img-media">
+                </td>
+                <td class="text-semibold">Python</td>
+                <td class="muted">Mauricio Olivas</td>
+                <td class="muted">10</td>
+                <td class="muted">20 horas</td>
+                <td class="muted">Software</td>
+                <td class="muted">29/06/2022</td>
+            </tr>
+        </tbody>
 
-        <div class="page-title">
-            <h1>Cursos</h2><br>
-            <h3>Lista de nuestros cursos disponibles</h3><br>
-            <ol type="A">
-                <li><a href="">Base de Datos</a></li>
-                <li><a href="">Programación</a></li>
-                <li><a href="">Seguridad Informática</a></li>
-            </ol>
-        </div>  
-    </div>
+    </table>
+<!--/Tabla de Cursos-->
 </div>
 {%endblock%}
 
